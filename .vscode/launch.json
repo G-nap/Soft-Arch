@@ -8,6 +8,13 @@
       "type": "java",
       "name": "Launch Main",
       "request": "launch",
+      "mainClass": "creational.Main",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
       "mainClass": "com.solid.lsp.Main",
       "projectName": ""
     },
