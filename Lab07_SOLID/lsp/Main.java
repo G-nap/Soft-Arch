@@ -1,5 +1,7 @@
 package com.solid.lsp;
-
+// import com.solid.lsp.Rectangle;
+// import com.solid.lsp.Square;
+// import com.solid.lsp.Shape;
 
 public class Main {
 
@@ -19,6 +21,7 @@ public class Main {
         System.out.println("====   Square  ====");
         System.out.println("Width = " + width);
         System.out.println("Height = " + height);
-        System.out.println("Area = " + reg2.getArea());
+        // System.out.println("Area = " + reg2.getArea());
+     
     }
 }
