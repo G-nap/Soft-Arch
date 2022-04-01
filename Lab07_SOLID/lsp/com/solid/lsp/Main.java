@@ -19,8 +19,9 @@ public class Main {
         reg2.setWidth(width);
         reg2.setHeight(height);
         System.out.println("====   Square  ====");
-        System.out.println("Width = " + width);
-        System.out.println("Height = " + height);
+        // System.out.println("Width = " + width);
+        // System.out.println("Height = " + height);
+        System.out.println("Side = " + ((Square) reg2).getSize());
         System.out.println("Area = " + reg2.getArea());
      
     }
