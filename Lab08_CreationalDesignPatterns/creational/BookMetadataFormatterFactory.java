@@ -1,7 +1,7 @@
 package creational;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.text.ParseException;
 
 public class BookMetadataFormatterFactory {
     public enum Format {
@@ -17,7 +17,7 @@ public class BookMetadataFormatterFactory {
     }
 
     public static BookMetadataFormatter getBookMetadataFormatter(Format format)
-            throws IOException, ParserConfigurationException {
+            throws IOException, ParseException {
         BookMetadataFormatter formatter;
         switch (format) {
             case CSV:

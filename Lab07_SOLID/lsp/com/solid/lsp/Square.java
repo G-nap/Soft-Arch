@@ -2,6 +2,8 @@ package com.solid.lsp;
 
 public class Square extends Rectangle {
 
+    private int side;
+
     Square(int side) {
         this.setSide(side);
     }
@@ -20,6 +22,7 @@ public class Square extends Rectangle {
         super.setWidth(side);
         super.setHeight(side);
     }
+    @Override
     public int getArea() {
         return side * side;
     }

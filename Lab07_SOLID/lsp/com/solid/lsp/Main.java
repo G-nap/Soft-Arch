@@ -21,7 +21,7 @@ public class Main {
         System.out.println("====   Square  ====");
         System.out.println("Width = " + width);
         System.out.println("Height = " + height);
-        // System.out.println("Area = " + reg2.getArea());
+        System.out.println("Area = " + reg2.getArea());
      
     }
 }

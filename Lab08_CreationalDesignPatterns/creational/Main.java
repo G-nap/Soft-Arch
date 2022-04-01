@@ -1,11 +1,15 @@
 package creational;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.text.ParseException;
+
+// import javax.xml.parsers.ParserConfigurationException;
+
+import org.apache.commons.digester.plugins.PluginConfigurationException;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 
         // Current usage
         BookMetadataFormatter formatter = null;
@@ -16,7 +20,7 @@ public class Main {
             System.out.print(formatter.getMetadataString());
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ParserConfigurationException e) {
+        } catch (PluginConfigurationException e) {
             e.printStackTrace();
         }
 

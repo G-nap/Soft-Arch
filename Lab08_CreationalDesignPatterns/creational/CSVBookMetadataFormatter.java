@@ -1,8 +1,5 @@
 package creational;
 
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVPrinter;
-
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.LinkedList;
@@ -17,30 +14,22 @@ public class CSVBookMetadataFormatter implements BookMetadataFormatter {
         reset();
     }
 
-    public BookMetadataFormatter reset() {
+    public BookMetadataFormatter reset() throws IOException {
         writer = new StringWriter();
-        try {
-            csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
+        csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
 //            Stream<String> headers = Arrays.stream(Book.Metadata.values()).map(Book.Metadata::getValue);
-            List<String> headers = new LinkedList<String>();
-            for (Book.Metadata metadata : Book.Metadata.values()) {
-                headers.add(metadata.value);
-            }
-            csvPrinter.printRecord(headers);
-        } catch (IOException e) {
-            e.printStackTrace();
+        List<String> headers = new LinkedList<String>();
+        for (Book.Metadata metadata : Book.Metadata.values()) {
+            headers.add(metadata.value);
         }
+        csvPrinter.printRecord(headers);
         return this;
     }
 
     @Override
-    public BookMetadataFormatter append(Book b) {
+    public BookMetadataFormatter append(Book b) throws IOException {
         String authors = String.join("|", b.getAuthors());
-        try {
-            csvPrinter.printRecord(b.getISBN(), b.getTitle(), b.getPublisher(), authors);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        csvPrinter.printRecord(b.getISBN(), b.getTitle(), b.getPublisher(), authors);
         return this;
     }
 
