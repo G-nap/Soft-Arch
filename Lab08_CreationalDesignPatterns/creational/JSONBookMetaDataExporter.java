@@ -1,5 +1,4 @@
 package creational;
-
 import java.io.PrintStream;
 
 public class JSONBookMetaDataExporter extends BookMetadataExporter {
