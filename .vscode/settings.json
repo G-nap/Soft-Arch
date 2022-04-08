@@ -7,6 +7,7 @@
   "java.project.sourcePaths": [
     "Lab09_StructuralDesignPatterns/structural",
     "Lab08_CreationalDesignPatterns",
-    "Lab07_SOLID/lsp"
+    "Lab07_SOLID/lsp",
+    "Lab10_BehavioralDesignPattern/behavioral1/behavioral1"
   ]
 }

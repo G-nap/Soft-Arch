@@ -19,7 +19,6 @@ public class NewsSubscriber implements Subscriber<News> {
 
 	@Override
 	public void onNext(News item) {
-			//System.out.println("Next in NewsSubscriber");
 			System.out.println(reader + " get the news : " + item.getContent());
 	}
 
