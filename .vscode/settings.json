@@ -5,9 +5,8 @@
     "c:\\Users\\choti\\Downloads\\SequenceFileTool-1.3.6-shaded.jar"
   ],
   "java.project.sourcePaths": [
-    "Lab09_StructuralDesignPatterns/structural",
+    "Lab07_SOLID\\lsp",
     "Lab08_CreationalDesignPatterns",
-    "Lab07_SOLID/lsp",
-    "Lab10_BehavioralDesignPattern/behavioral1/behavioral1"
+    "Lab10_BehavioralDesignPattern"
   ]
 }

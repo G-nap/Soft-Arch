@@ -8,6 +8,13 @@
       "type": "java",
       "name": "Launch Main",
       "request": "launch",
+      "mainClass": "edu.parinya.softarchdesign.behavioral.Main",
+      "projectName": "Soft-Arch_40ba5d66"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
       "mainClass": "edu.parinya.softarchdesign.structural.Main",
       "projectName": "Soft-Arch_40ba5d66"
     },

@@ -14,13 +14,12 @@ public class NewsPublisher implements Publisher<News> {
         });
     }
 
-    @Override
-    public void subscribe() {
-        people.add(subscriber);
-    }
-
     public void unsubscribe(Subscriber<? super News> subscriber) {
         people.remove(subscriber);
+    } 
+      
+    @Override
+    public void subscribe(Subscriber<? super News> subscriber) {
+        people.add(subscriber);
     }
-
 }
