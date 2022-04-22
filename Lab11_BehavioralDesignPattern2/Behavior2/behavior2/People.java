@@ -1,4 +1,4 @@
-package edu.parinya.softarchdesign.behavior2;
+package behavior2;
 
 // DO NOT MODIFY ANYTHING BELOW THIS LINE!!
 import java.io.PrintStream;
